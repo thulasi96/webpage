@@ -10,7 +10,7 @@ public interface userDetailDao {
 	
 	public boolean updateUserdetail(userDetail user);
 	
-	public userDetail getUserdetail(String alluser);
+	public userDetail getUserdetail(String user);
 	
 	public userDetail getuserId(int userId);
 	

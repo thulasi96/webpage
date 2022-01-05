@@ -46,9 +46,9 @@ public class userDetailOperation implements userDetailDao{
     }
 
     @Override
-    public userDetail getUserdetail(String alluser) {
+    public userDetail getUserdetail(String user) {
 	Session session=sessionFactory.openSession();
-	userDetail userdetail=session.get(userDetail.class,alluser);
+	userDetail userdetail=session.get(userDetail.class,user);
 	session.close();
 	return userdetail;
     }
